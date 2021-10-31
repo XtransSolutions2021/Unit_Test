@@ -13,6 +13,10 @@ series.index = series.index.to_period('M')
 # split into train and test sets
 X = series.values
 size = int(len(X) * 0.66)
+
+#print(size)
+
+
 train, test = X[0:size], X[size:len(X)]
 history = [x for x in train]
 predictions = list()
